@@ -1,43 +1,113 @@
-# Baranggay Tambacan Health Center
-
-Welcome to the Baranggay Tambacan Health Center official page.
-
-## Services Offered
-
-- General Check-up
-- Maternal and Child Health Services
-- Immunization
-- Dental Services
-- Laboratory Services
-- Health Education and Counseling
-
-## Operating Hours
-
-- Monday to Friday: 8:00 AM - 5:00 PM
-- Saturday: 8:00 AM - 12:00 PM
-- Sunday: Closed
-
-## Contact Information
-
-- **Address:** Baranggay Tambacan, Iligan City
-- **Phone:** (063) 221-1234
-- **Email:** tambacanhealthcenter@example.com
-
-## Staff
-
-- **Dr. Juan Dela Cruz** - General Practitioner
-- **Nurse Maria Santos** - Head Nurse
-- **Dentist Ana Reyes** - Dental Services
-- **Lab Technician Jose Garcia** - Laboratory Services
-
-## Location
-
-![Map](path/to/map/image.png)
-
-## Announcements
-
-Stay tuned for upcoming health programs and community events.
-
-For more information, please visit our health center or contact us through the provided details.
-
-Thank you for visiting the Baranggay Tambacan Health Center page!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            padding: 1rem;
+            display: block;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            background-color: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#patient-enrollment">Patient Enrollment</a></li>
+            <li><a href="#individual-treatment-record">Individual Treatment Record</a></li>
+            <li><a href="#adult-immunization">Adult Immunization</a></li>
+            <li><a href="#child-immunization">Child Immunization</a></li>
+            <li><a href="#family-planning">Family Planning</a></li>
+            <li><a href="#prenatal">Prenatal</a></li>
+            <li><a href="#medicine-stock">Medicine Stock</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="patient-enrollment">
+            <h2>Patient Enrollment</h2>
+            <!-- Content for patient enrollment -->
+        </section>
+        <section id="individual-treatment-record">
+            <h2>Individual Treatment Record</h2>
+            <!-- Content for individual treatment record -->
+        </section>
+        <section id="adult-immunization">
+            <h2>Adult Immunization</h2>
+            <!-- Content for adult immunization -->
+        </section>
+        <section id="child-immunization">
+            <h2>Child Immunization</h2>
+            <!-- Content for child immunization -->
+        </section>
+        <section id="family-planning">
+            <h2>Family Planning</h2>
+            <!-- Content for family planning -->
+        </section>
+        <section id="prenatal">
+            <h2>Prenatal</h2>
+            <!-- Content for prenatal -->
+        </section>
+        <section id="medicine-stock">
+            <h2>Medicine Stock</h2>
+            <!-- Content for medicine stock -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Baranggay Tambacan Health Center</p>
+    </footer>
+</body>
+</html>

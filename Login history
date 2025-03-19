@@ -1,0 +1,10 @@
+import datetime
+
+def log_login(username):
+    with open('login_history.txt', 'a') as file:
+        timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        file.write(f'{timestamp} - {username} logged in\n')
+
+# Example usage
+log_login('admin')
+log_login('user1')

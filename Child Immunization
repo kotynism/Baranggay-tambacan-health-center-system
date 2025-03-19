@@ -1,0 +1,17 @@
+Barangay Tambacan Health Center
+Child Immunization Record
+
+--------------------------------------------------------------------------------
+| No. | Child's Name       | Date of Birth | Parent/Guardian Name | Vaccine Type | Date of Immunization | Administered By |
+--------------------------------------------------------------------------------
+|  1  | John Doe           | 01/01/2020    | Jane Doe             | BCG          | 02/01/2020           | Nurse A         |
+|  2  | Mary Smith         | 02/15/2020    | John Smith           | Hepatitis B  | 03/15/2020           | Nurse B         |
+|  3  | Michael Johnson    | 03/10/2020    | Sarah Johnson        | Polio        | 04/10/2020           | Nurse C         |
+|  4  | Emily Davis        | 04/20/2020    | Robert Davis         | DTP          | 05/20/2020           | Nurse D         |
+|  5  | William Brown      | 05/25/2020    | Linda Brown          | Measles      | 06/25/2020           | Nurse E         |
+--------------------------------------------------------------------------------
+
+Notes:
+- Ensure all fields are filled out accurately.
+- Keep this record updated with each immunization.
+- Store this record securely to protect patient privacy.

@@ -1,0 +1,69 @@
+<?php
+// FamilyPlanningConsultation.php
+
+class FamilyPlanningConsultation {
+    private $consultationId;
+    private $patientId;
+    private $consultationDate;
+    private $consultationDetails;
+    private $doctorId;
+    private $notes;
+
+    public function __construct($consultationId, $patientId, $consultationDate, $consultationDetails, $doctorId, $notes) {
+        $this->consultationId = $consultationId;
+        $this->patientId = $patientId;
+        $this->consultationDate = $consultationDate;
+        $this->consultationDetails = $consultationDetails;
+        $this->doctorId = $doctorId;
+        $this->notes = $notes;
+    }
+
+    public function getConsultationId() {
+        return $this->consultationId;
+    }
+
+    public function getPatientId() {
+        return $this->patientId;
+    }
+
+    public function getConsultationDate() {
+        return $this->consultationDate;
+    }
+
+    public function getConsultationDetails() {
+        return $this->consultationDetails;
+    }
+
+    public function getDoctorId() {
+        return $this->doctorId;
+    }
+
+    public function getNotes() {
+        return $this->notes;
+    }
+
+    public function setConsultationDetails($consultationDetails) {
+        $this->consultationDetails = $consultationDetails;
+    }
+
+    public function setNotes($notes) {
+        $this->notes = $notes;
+    }
+
+    public function displayConsultation() {
+        echo "Consultation ID: " . $this->getConsultationId() . "\n";
+        echo "Patient ID: " . $this->getPatientId() . "\n";
+        echo "Consultation Date: " . $this->getConsultationDate() . "\n";
+        echo "Consultation Details: " . $this->getConsultationDetails() . "\n";
+        echo "Doctor ID: " . $this->getDoctorId() . "\n";
+        echo "Notes: " . $this->getNotes() . "\n";
+    }
+    public function renderConsultationButton() {
+        echo '<button onclick="alert(\'Consultation ID: ' . $this->getConsultationId() . '\')">Consult</button>';
+    }
+}
+
+// Example usage
+$consultation = new FamilyPlanningConsultation(1, 123, '2023-10-15', 'Initial consultation for family planning.', 456, 'Patient is in good health.');
+$consultation->displayConsultation();
+?>

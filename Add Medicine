@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Medicine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        input[type="text"], input[type="number"], textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            background: #5cb85c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Medicine</h1>
+        <form action="/path/to/your/server-side/script" method="post">
+            <label for="medicineName">Medicine Name:</label>
+            <input type="text" id="medicineName" name="medicineName" required>
+
+            <label for="medicineDescription">Description:</label>
+            <textarea id="medicineDescription" name="medicineDescription" rows="4" required></textarea>
+
+            <label for="medicineQuantity">Quantity:</label>
+            <input type="number" id="medicineQuantity" name="medicineQuantity" required>
+
+            <label for="medicinePrice">Price:</label>
+            <input type="number" id="medicinePrice" name="medicinePrice" step="0.01" required>
+
+            <input type="submit" value="Add Medicine">
+        </form>
+    </div>
+</body>
+</html>
